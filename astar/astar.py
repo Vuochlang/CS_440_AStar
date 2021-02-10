@@ -279,6 +279,9 @@ class AStar():
                 exist_tnode = self.reached.get(new_state)  # check if the successor already in the reached{}
                 h_cost = self.problem.h(new_state)  # calculate the heuristic cost with the successor state
 
+                if costlimit and path_cost > costlimit:  # quit search when the path cost exceeds the limit
+                    return False
+
                 # if the successor does not exist in the reach{} TNode
                 # or, we found smaller path cost for the state of the successor
                 if exist_tnode is None or path_cost < exist_tnode[1]:
