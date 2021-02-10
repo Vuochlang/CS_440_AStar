@@ -1,13 +1,13 @@
 # CS 440 - Artificial Intelligence
 
-<h1> Assignment 2:  </h1>
-<h2> AStar - A Search algorithm </h2>
+<h2> Assignment 2:  </h2>
+<h3> AStar - A Search algorithm </h3>
 
 02/09/2021
 
 Given the astar folder:
 
-In the astar.pyy, implement the 2 methods that are unimplemented:
+In the astar.py, implement the 2 methods that are unimplemented:
   
     _ method 1: def successors(self, state),
         Given a state, find its successors which are the edges connect states in cardinal directions and diagonals. Then 
